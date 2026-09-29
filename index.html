@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinAssist</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #5a5a5a;
+      --accent: #2e7d32;
+      --card: #f5f5f3;
+      --border: #e0e0dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14150f;
+        --fg: #eceae4;
+        --muted: #a8a79f;
+        --accent: #9ccc65;
+        --card: #1e1f17;
+        --border: #2c2d22;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 4px;
+    }
+    .tagline {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 1.05rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>FinAssist</h1>
+    <p class="tagline">An offline-first household finance and obligation tracker for Android.</p>
+
+    <div class="card">
+      <h2>What it does</h2>
+      <p>
+        Tracks bills, loans, insurance, assets, family important dates, health checkups,
+        and medications in one place — designed to work fully offline, with your data
+        stored on your own device.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Backup</h2>
+      <p>
+        FinAssist can optionally back up your data to a private, hidden folder in your
+        own Google Drive that only this app can access. Nothing is shared with any
+        third party. See the
+        <a href="privacy.html">privacy policy</a> for details.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Who this is for</h2>
+      <p>
+        FinAssist is a personal project, shared directly with family and friends rather
+        than distributed through the Play Store.
+      </p>
+    </div>
+
+    <footer>
+      <a href="privacy.html">Privacy policy</a>
+    </footer>
+  </div>
+</body>
+</html>
